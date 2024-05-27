@@ -1,0 +1,19 @@
+<main class="note-details">
+  <h1>Note Details</h1>
+
+  <div class="note-info">
+    <div class="note-attribute">
+      <strong>Title:</strong> <%= @note.title %>
+    </div>
+    <div class="note-attribute">
+      <strong>Content:</strong>
+      <p><%= @note.body %></p>
+    </div>
+  </div>
+
+  <div class="note-actions">
+    <%= link_to 'Back', notes_path, class: 'btn btn-back' %>
+    <%= link_to 'Edit', edit_note_path(@note), class: 'btn btn-edit' %>
+    <%= button_to 'Delete', @note, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+  </div>
+</main>

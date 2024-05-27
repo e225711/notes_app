@@ -11,6 +11,15 @@
   </head>
 
   <body>
+    <header>
+      <nav>
+        <h1><%= link_to 'NotesApp', root_path %></h1>
+        <ul>
+          <li><%= link_to 'New', new_note_path %></li>
+          <li><%= link_to 'List', notes_path %></li>
+        </ul>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,219 @@
+/* notes.css */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div {
+  margin-bottom: 15px;
+  text-align: left; /* 入力フィールドのラベルを左寄せにする */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.quick-add {
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quick-add h2 {
+  margin-top: 0;
+}
+
+.quick-add-form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.quick-add-field {
+  margin-right: 10px;
+  flex: 1;
+}
+
+.quick-add-field label {
+  display: block;
+  font-weight: bold;
+}
+
+.quick-add-field input[type="text"],
+.quick-add-field textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.quick-add-submit {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.quick-add-submit:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f8f9fa;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table tr td a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+table tr td a:hover {
+  text-decoration: underline;
+}
+
+/* Note details container */
+.note-details {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Note info section */
+.note-info {
+  margin-bottom: 20px;
+}
+
+/* Note attribute style */
+.note-attribute {
+  margin-bottom: 10px;
+}
+
+/* Note actions section */
+.note-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* 追加 */
+}
+
+.btn.btn-back {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn.btn-back:hover {
+  background-color: #0056b3;
+}
+
+.btn.btn-edit {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn.btn-edit:hover {
+  background-color: #218838;
+}
+
+.btn.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.btn.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Delete button style for button_to */
+.button_to {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* 追加 */
+}

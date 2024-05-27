@@ -1,0 +1,39 @@
+<main>
+      <h1>Notes</h1>
+
+      <!-- Quick Add Form -->
+      <div class="quick-add">
+        <h2>Quick Add Note</h2>
+        <%= form_for :note, url: notes_path, method: :post, html: { class: 'quick-add-form' } do |f| %>
+          <div class="quick-add-field">
+            <%= f.label :title, "Title" %>
+            <%= f.text_field :title %>
+          </div>
+          <div class="quick-add-field">
+            <%= f.label :body, "Body" %>
+            <%= f.text_area :body %>
+          </div>
+          <%= f.submit 'Quick Add', class: 'quick-add-submit' %>
+        <% end %>
+      </div>
+
+      <!-- Notes List -->
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @notes.each do |note| %>
+            <tr>
+              <td><%= note.id %></td>
+              <td><%= note.title %></td>
+              <td><%= link_to 'Show', note_path(note) %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </main>

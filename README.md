@@ -1,24 +1,55 @@
-# README
+# Notes App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Notes App はシンプルなメモ管理アプリケーションです。
 
-Things you may want to cover:
+## 機能
 
-* Ruby version
+- メモの作成、編集、削除
+- メモの一覧表示
 
-* System dependencies
+## 必要なソフトウェア
 
-* Configuration
+- Ruby (バージョン 3.2.2)
+- Ruby on Rails (バージョン 6.1.7.7)
+- MySQL
 
-* Database creation
+## インストール
 
-* Database initialization
+1. リポジトリをクローンします。
 
-* How to run the test suite
+   ```bash
+   git clone https://github.com/username/notes-app.git
+   ```
 
-* Services (job queues, cache servers, search engines, etc.)
+2. アプリケーションのディレクトリに移動します。
 
-* Deployment instructions
+   ```bash
+   cd notes-app
+   ```
 
-* ...
+3. 依存関係をインストールします。
+
+   ```bash
+   bundle install
+   ```
+
+4. データベースをセットアップします。
+
+   ```bash
+   rails db:create db:migrate
+   ```
+
+5. サーバーを起動します。
+
+   ```bash
+   rails server
+   ```
+
+6. ブラウザで `http://localhost:3000` にアクセスします。
+
+## 使用方法
+
+1. ブラウザでアプリケーションにアクセスします。
+2. メモ一覧ページで新しいメモを作成します。
+3. 作成したメモは一覧から確認できます。
+4. メモの詳細ページから編集または削除できます。
